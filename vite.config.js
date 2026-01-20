@@ -3,8 +3,6 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  build: {
-    outDir: "dist", // default, Netlify deploy করবে dist folder
-  },
+  base: "/",   // important for Netlify
 });
 
